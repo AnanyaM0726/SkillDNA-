@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="SkillDNA helps you understand your skills, discover career paths, and build a personalized learning roadmap." />
+  <title>SkillDNA — Skill Intelligence & Career Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="SkillDNA home">
+        <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+        <span>Skill<span class="brand-light">DNA</span></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <a class="nav-item active" href="#overview"><span class="nav-icon">▦</span> Overview</a>
+        <a class="nav-item" href="#skills"><span class="nav-icon">⌁</span> Skill intelligence</a>
+        <a class="nav-item" href="#careers"><span class="nav-icon">◎</span> Career explorer</a>
+        <a class="nav-item" href="#roadmap"><span class="nav-icon">↗</span> Learning roadmap</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <div class="help-icon">✦</div>
+          <strong>Your next step starts here.</strong>
+          <p>Small learning goals build lasting career momentum.</p>
+          <a href="#roadmap">View roadmap <span>→</span></a>
+        </div>
+        <button class="profile-mini" id="profileButton" type="button">
+          <span class="avatar">SA</span>
+          <span class="profile-copy"><strong id="sidebarName">Student Account</strong><small>Personal workspace</small></span>
+          <span class="dots">•••</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuButton" aria-label="Open navigation" type="button">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong>Overview</strong></div>
+        <div class="top-actions">
+          <span class="status-pill"><i></i> Prototype workspace</span>
+          <button class="icon-button" id="themeButton" type="button" aria-label="Toggle light theme">◐</button>
+          <button class="avatar avatar-top" id="editProfileButton" type="button" aria-label="Edit profile">SA</button>
+        </div>
+      </header>
+
+      <section class="page-section hero-section" id="overview">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="sparkle">✦</span> YOUR CAREER, DECODED</div>
+          <h1>Discover your potential.<br><span>Design your future.</span></h1>
+          <p>Turn what you know into what you can become. Understand your skills, uncover career opportunities, and build a roadmap that moves you forward.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#skills">Explore my skills <span>→</span></a>
+            <a class="button button-ghost" href="#careers">Explore careers</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract SkillDNA skill network illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="network-line line-one"></div><div class="network-line line-two"></div>
+          <div class="network-line line-three"></div><div class="network-line line-four"></div>
+          <div class="node node-a">JS</div><div class="node node-b">AI</div>
+          <div class="node node-c">SQL</div><div class="node node-d">UX</div>
+          <div class="node node-e">+</div>
+          <div class="core"><span class="core-symbol">✳</span><small>SKILL</small><strong>DNA</strong></div>
+          <div class="floating-label label-top"><span class="pulse-dot"></span> Skill mapping</div>
+          <div class="floating-label label-bottom">Career signals <span>↗</span></div>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <div><div class="eyebrow">YOUR SNAPSHOT</div><h2>Career intelligence at a glance</h2></div>
+        <span class="updated-label">Sample data · Customize your profile</span>
+      </section>
+
+      <section class="stats-grid" aria-label="Career statistics">
+        <article class="stat-card">
+          <div class="stat-top"><span>Skills assessed</span><span class="stat-icon violet">⌁</span></div>
+          <div class="stat-number" id="assessedCount">8 <small>/ 12</small></div>
+          <div class="stat-foot"><div class="mini-progress"><span style="width:67%"></span></div><span>67% coverage</span></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Career readiness</span><span class="stat-icon green">↗</span></div>
+          <div class="stat-number" id="readinessScore">72<small>%</small></div>
+          <div class="stat-foot"><span class="trend-up">↑ 8%</span><span>sample improvement</span></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Skill gaps identified</span><span class="stat-icon amber">⌖</span></div>
+          <div class="stat-number" id="gapCount">3</div>
+          <div class="stat-foot"><span class="neutral-chip">Priority areas</span><span>ready to work on</span></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span>Learning progress</span><span class="stat-icon blue">◷</span></div>
+          <div class="stat-number" id="learningProgress">45<small>%</small></div>
+          <div class="stat-foot"><div class="mini-progress blue-progress"><span style="width:45%"></span></div><span>Roadmap complete</span></div>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel skill-panel" id="skills">
+          <div class="panel-header">
+            <div><div class="eyebrow">SKILL INTELLIGENCE</div><h2>Your skill profile</h2><p class="panel-subtitle">Adjust the sliders to update your skill profile.</p></div>
+            <span class="live-badge"><i></i> Interactive</span>
+          </div>
+          <div class="skill-list" id="skillList">
+            <label class="skill-row"><span class="skill-name"><span class="skill-dot dot-purple"></span>JavaScript</span><input type="range" min="0" max="100" value="78" data-skill="JavaScript" aria-label="JavaScript proficiency"><strong class="skill-value">78%</strong></label>
+            <label class="skill-row"><span class="skill-name"><span class="skill-dot dot-blue"></span>Problem solving</span><input type="range" min="0" max="100" value="72" data-skill="Problem solving" aria-label="Problem solving proficiency"><strong class="skill-value">72%</strong></label>
+            <label class="skill-row"><span class="skill-name"><span class="skill-dot dot-green"></span>SQL & databases</span><input type="range" min="0" max="100" value="58" data-skill="SQL & databases" aria-label="SQL and databases proficiency"><strong class="skill-value">58%</strong></label>
+            <label class="skill-row"><span class="skill-name"><span class="skill-dot dot-orange"></span>Communication</span><input type="range" min="0" max="100" value="81" data-skill="Communication" aria-label="Communication proficiency"><strong class="skill-value">81%</strong></label>
+            <label class="skill-row"><span class="skill-name"><span class="skill-dot dot-pink"></span>Data analysis</span><input type="range" min="0" max="100" value="45" data-skill="Data analysis" aria-label="Data analysis proficiency"><strong class="skill-value">45%</strong></label>
+          </div>
+          <div class="skill-legend"><span><i class="legend-dot strong-dot"></i> Strength ≥ 75%</span><span><i class="legend-dot growth-dot"></i> Growth area &lt; 60%</span></div>
+          <button class="text-button" id="recalculateButton" type="button">Recalculate insights <span>→</span></button>
+        </article>
+
+        <article class="panel insight-panel">
+          <div class="panel-header">
+            <div><div class="eyebrow">INTELLIGENCE BRIEF</div><h2>Your next opportunity</h2></div>
+            <span class="insight-icon">✦</span>
+          </div>
+          <div class="insight-feature">
+            <div class="insight-symbol">⌘</div>
+            <div><span class="match-label">DEMO CAREER MATCH</span><h3 id="careerMatchTitle">Junior Web Developer</h3><p id="careerMatchDescription">Build on your JavaScript and problem-solving strengths while improving database skills.</p></div>
+          </div>
+          <div class="match-meter">
+            <div class="meter-label"><span>Estimated alignment</span><strong id="matchPercent">82%</strong></div>
+            <div class="meter-track"><span id="matchBar" style="width:82%"></span></div>
+          </div>
+          <div class="insight-divider"></div>
+          <div class="focus-title">Recommended focus <span>THIS WEEK</span></div>
+          <div class="focus-item"><span class="focus-number">01</span><span><strong id="focusSkill">Data analysis</strong><small id="focusReason">Build confidence through a small project.</small></span><span class="focus-arrow">↗</span></div>
+          <div class="focus-item"><span class="focus-number">02</span><span><strong>Build a portfolio</strong><small>Show what you can do with a real project.</small></span><span class="focus-arrow">↗</span></div>
+          <a class="button button-dark full-button" href="#roadmap">View my learning roadmap <span>→</span></a>
+          <p class="disclaimer">Illustrative recommendations only — not an AI assessment or hiring prediction.</p>
+        </article>
+      </section>
+
+      <section class="section-heading lower-heading" id="careers">
+        <div><div class="eyebrow">CAREER EXPLORER</div><h2>Paths worth exploring</h2><p class="section-description">Explore sample roles and see how your skills may align.</p></div>
+        <span class="text-link">Based on your profile <span>↗</span></span>
+      </section>
+      <section class="career-grid">
+        <article class="career-card">
+          <div class="career-card-top"><div class="career-icon icon-dev">⌘</div><span class="match-chip" data-career="web">82% match</span></div>
+          <h3>Junior Web Developer</h3><p>Create accessible, responsive websites and interactive web experiences.</p>
+          <div class="tag-list"><span>JavaScript</span><span>HTML/CSS</span><span>Git</span></div>
+          <div class="career-bottom"><span>Suggested level <strong>Entry</strong></span><button class="career-detail" data-role="web" type="button">View path →</button></div>
+        </article>
+        <article class="career-card">
+          <div class="career-card-top"><div class="career-icon icon-data">⌗</div><span class="match-chip" data-career="data">68% match</span></div>
+          <h3>Junior Data Analyst</h3><p>Transform data into useful insights with queries, analysis, and visualization.</p>
+          <div class="tag-list"><span>SQL</span><span>Excel</span><span>Python</span></div>
+          <div class="career-bottom"><span>Suggested level <strong>Entry</strong></span><button class="career-detail" data-role="data" type="button">View path →</button></div>
+        </article>
+        <article class="career-card">
+          <div class="career-card-top"><div class="career-icon icon-ux">✳</div><span class="match-chip" data-career="ux">64% match</span></div>
+          <h3>UX/UI Designer</h3><p>Design intuitive digital products by understanding people and their needs.</p>
+          <div class="tag-list"><span>Research</span><span>Figma</span><span>Prototyping</span></div>
+          <div class="career-bottom"><span>Suggested level <strong>Entry</strong></span><button class="career-detail" data-role="ux" type="button">View path →</button></div>
+        </article>
+      </section>
+
+      <section class="roadmap-section" id="roadmap">
+        <div class="roadmap-heading"><div><div class="eyebrow">YOUR ACTION PLAN</div><h2>A roadmap you can act on</h2><p class="section-description">A sample 4-step plan to turn insights into progress.</p></div><div class="roadmap-progress"><strong id="roadmapPercent">1 of 4</strong><span>milestones complete</span></div></div>
+        <div class="roadmap-track">
+          <label class="roadmap-step completed"><input type="checkbox" checked><span class="step-check">✓</span><span class="step-content"><small>STEP 01 · FOUNDATION</small><strong>Map your current skills</strong><span>Review strengths and choose a target role.</span></span><span class="step-time">30 min</span></label>
+          <label class="roadmap-step"><input type="checkbox"><span class="step-check">2</span><span class="step-content"><small>STEP 02 · LEARN</small><strong>Strengthen a priority skill</strong><span>Complete a beginner-friendly focused lesson.</span></span><span class="step-time">3–5 hrs</span></label>
+          <label class="roadmap-step"><input type="checkbox"><span class="step-check">3</span><span class="step-content"><small>STEP 03 · APPLY</small><strong>Build a practical project</strong><span>Apply your learning to a small portfolio project.</span></span><span class="step-time">1 week</span></label>
+          <label class="roadmap-step"><input type="checkbox"><span class="step-check">4</span><span class="step-content"><small>STEP 04 · REFLECT</small><strong>Review and update your profile</strong><span>Record progress and set the next learning goal.</span></span><span class="step-time">30 min</span></label>
+        </div>
+      </section>
+
+      <footer class="footer"><a class="brand footer-brand" href="#overview"><span class="brand-mark"><span></span><span></span><span></span><span></span></span><span>Skill<span class="brand-light">DNA</span></span></a><span>Skill intelligence for your next chapter.</span><span>Demo prototype · <span id="year"></span></span></footer>
+    </main>
+  </div>
+
+  <dialog class="modal" id="profileModal">
+    <form method="dialog" id="profileForm">
+      <div class="modal-heading"><div><div class="eyebrow">PERSONALIZE</div><h2>Your profile</h2></div><button class="modal-close" aria-label="Close" value="cancel">×</button></div>
+      <label class="form-label" for="nameInput">Display name</label>
+      <input class="text-input" id="nameInput" maxlength="50" placeholder="Enter your name" />
+      <label class="form-label" for="goalSelect">Career goal</label>
+      <select class="text-input" id="goalSelect"><option value="web">Web development</option><option value="data">Data analytics</option><option value="ux">UX/UI design</option></select>
+      <button class="button button-primary full-button" id="saveProfile" value="save">Save profile <span>→</span></button>
+      <p class="modal-note">This demo stores your preferences in this browser only.</p>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
